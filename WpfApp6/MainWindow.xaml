@@ -7,6 +7,28 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Label Content="Rodzaj przesylki" HorizontalAlignment="Left" Margin="95,66,0,0" VerticalAlignment="Top" Height="24" Width="151" RenderTransformOrigin="0.5,0.5" IsEnabled="False">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.77"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <RadioButton x:Name="pocztowka" Content="Pocztówka" HorizontalAlignment="Left" Margin="107,104,0,0" VerticalAlignment="Top" />
+        <RadioButton x:Name="list" Content="List" HorizontalAlignment="Left" Margin="107,124,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="paczka" Content="Paczka" HorizontalAlignment="Left" Margin="107,144,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="sprawdz" Content="sprawdz cene" HorizontalAlignment="Left" Margin="67,174,0,0" VerticalAlignment="Top" Height="21" Width="98"/>
+        <Label x:Name="cena" Content="cena" HorizontalAlignment="Left" Margin="125,242,0,0" VerticalAlignment="Top" Height="65" Width="78" IsEnabled="False" FontWeight="Bold" FontSize="20"/>
+        <Label Content="Dane adresowe" HorizontalAlignment="Left" Margin="461,73,0,0" VerticalAlignment="Top" Height="25" Width="196" IsEnabled="False"/>
+        <Label Content="Ulica z Numerem" HorizontalAlignment="Left" Margin="461,104,0,0" VerticalAlignment="Top" Height="27" Width="166" IsEnabled="False"/>
+        <TextBox x:Name="ulica_nr" HorizontalAlignment="Left" Margin="461,136,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="182" Height="40"/>
+        <Label Content="Kod pocztowy" HorizontalAlignment="Left" Margin="462,184,0,0" VerticalAlignment="Top" Height="33" Width="164" IsEnabled="False"/>
+        <TextBox x:Name="kod" HorizontalAlignment="Left" Margin="461,217,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="98" Height="29"/>
+        <Label Content="Miasto" HorizontalAlignment="Left" Margin="462,251,0,0" VerticalAlignment="Top" Height="23" Width="135" IsEnabled="False"/>
+        <TextBox x:Name="miasto" HorizontalAlignment="Left" Margin="462,279,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="135" Height="28"/>
+        <Button x:Name="Button" Content="Zatwierdz" HorizontalAlignment="Center" Margin="0,398,0,0" VerticalAlignment="Top" Height="26" Width="800" Click="Button_Click"/>
     </Grid>
 </Window>
